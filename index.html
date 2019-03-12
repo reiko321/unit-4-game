@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title> Rule the Galaxy! </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
@@ -15,83 +18,82 @@
 
 <body>
 
-    <div class="Container">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <div>
-                    <h1 class="text-center"> Who will Rule the Galaxy? </h1>
+    <div id="fight">
+        <div class="Container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div>
+                        <h1 class="text-center"> Who will Rule the Galaxy? </h1>
+                    </div>
                 </div>
+                <div class="col-2"></div>
             </div>
-            <div class="col-2"></div>
-            <div id="fight"></div>
+            <div class="row">
+                <div class="col-3">
+                    <div id="grievous-card" class="card" style="width: 18rem;">
+                        <img src="assets/images/Grievous.jpg" class="card-img-top" alt="Grievous">
+                        <div class="card-body">
+                            <h5 class="card-title, font-weight-bold">General Grievous</h5>
+                            <p class="card-text">General Grievous is a brilliant Separatist military strategist and a
+                                feared Jedi hunter, known for his ruthlessness and hacking cough. His body itself is a
+                                weapon, allowing him lightning quick strikes and devastating blows.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3">
+                    <div id="palp-card" class="card" style="width: 18rem;">
+                        <img src="assets/images/Palp.jpg" class="card-img-top" alt="Palp">
+                        <div class="card-body">
+                            <h5 class="card-title, font-weight-bold">Emperor Palpatine</h5>
+                            <p class="card-text">Scheming, powerful, and evil to the core; Darth Sidious was in fact
+                                Palpatine, a Senator and phantom menace who slowly manipulated
+                                the political system of the Galactic
+                                Republic until he was named Supreme Chancellor.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3">
+                    <div id="vader-card" class="card" style="width: 18rem;">
+                        <img src="assets/images/Vader.jpg" class="card-img-top" alt="Vader">
+                        <div class="card-body">
+                            <h5 class="card-title, font-weight-bold">Darth Vader</h5>
+                            <p class="card-text">A former Jedi Knight, Darth Vader was seduced by the dark side by
+                                Emperor Palpatine. He
+                                remained
+                                in service of the Emperor for decades, enforcing his
+                                will and seeking to crush the Rebel Alliance.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3">
+                    <div id="maul-card" class="card" style="width: 18rem;">
+                        <img src="assets/images/Maul.jpg" class="card-img-top" alt="Maul">
+                        <div class="card-body">
+                            <h5 class="card-title, font-weight-bold">Darth Maul</h5>
+                            <p class="card-text">A deadly, agile Sith Lord trained by the evil Darth Sidious, Darth Maul
+                                is
+                                a formidable warrior and scheming mastermind. He wields an intimidating double-bladed
+                                lightsaber and fights with a menacing ferocity.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div id="grievous" class="card" style="width: 18rem;">
-                    <img src="assets/images/Grievous.jpg" class="card-img-top" alt="Grievous">
-                    <div class="card-body">
-                        <h5 class="card-title, font-weight-bold">General Grievous</h5>
-                        <p class="card-text">General Grievous is a brilliant Separatist military strategist and a
-                            feared Jedi hunter, known for his ruthlessness and hacking cough. His body itself is a
-                            weapon, allowing him lightning quick strikes and devastating blows.</p>
-                        <a href="#" class="btn btn-danger">Choose</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-3">
-                <div id="palp" class="card" style="width: 18rem;">
-                    <img src="assets/images/Palp.jpg" class="card-img-top" alt="Palp">
-                    <div class="card-body">
-                        <h5 class="card-title, font-weight-bold">Emperor Palpatine</h5>
-                        <p class="card-text">Scheming, powerful, and evil to the core, Darth Sidious restored the Sith
-                            and destroyed the Jedi Order. Living a double life, Sidious was in fact Palpatine, a Naboo
-                            Senator and phantom menace. He slowly manipulated the political system of the Galactic
-                            Republic until he was named Supreme Chancellor.</p>
-                        <a href="#" class="btn btn-danger">Choose</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-3">
-                <div id="vader" class="card" style="width: 18rem;">
-                    <img src="assets/images/Vader.jpg" class="card-img-top" alt="Vader">
-                    <div class="card-body">
-                        <h5 class="card-title, font-weight-bold">Darth Vader</h5>
-                        <p class="card-text">Once a heroic Jedi Knight, Darth Vader was seduced by the dark side of the
-                            Force, became a Sith Lord, and led the Empire's eradication of the Jedi Order. He remained
-                            in service of the Emperor -- the evil Darth Sidious -- for decades, enforcing his Master's
-                            will and seeking to crush the fledgling Rebel Alliance.</p>
-                        <a href="#" class="btn btn-danger">Choose</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-3">
-                <div id="maul" class="card" style="width: 18rem;">
-                    <img src="assets/images/Maul.jpg" class="card-img-top" alt="Maul">
-                    <div class="card-body">
-                        <h5 class="card-title, font-weight-bold">Darth Maul</h5>
-                        <p class="card-text">A deadly, agile Sith Lord trained by the evil Darth Sidious, Darth Maul is
-                            a formidable warrior and scheming mastermind. He wields an intimidating double-bladed
-                            lightsaber and fights with a menacing ferocity.</p>
-                        <a href="#" class="btn btn-danger">Choose</a>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-
-
     </div>
 
 
@@ -100,10 +102,6 @@
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
